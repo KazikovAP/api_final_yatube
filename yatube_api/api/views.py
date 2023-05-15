@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets, mixins
+from rest_framework import viewsets
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.filters import SearchFilter
@@ -9,11 +9,7 @@ from .serializers import (PostSerializer, GroupSerializer,
                           CommentSerializer, FollowSerializer)
 
 from .permissions import IsAuthorOrReadOnly
-
-
-class ListCreateViewSet(mixins.CreateModelMixin, mixins.ListModelMixin,
-                        viewsets.GenericViewSet):
-    pass
+from .mixins import ListCreateViewSet
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
