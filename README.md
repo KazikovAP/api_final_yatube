@@ -1,5 +1,12 @@
+[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
+[![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat-square&logo=Django%20REST%20Framework)](https://www.django-rest-framework.org/)
+[![djoser](https://img.shields.io/badge/-djoser-464646?style=flat-square&logo=djoser)](https://djoser.readthedocs.io/en/latest/)
+[![SQLite](https://img.shields.io/badge/-SQLite-464646?style=flat-square&logo=SQLite)](https://www.sqlite.org/)
+
 # API для Yatube
 
+---
 ## Описание
 API (основанный на Django REST Framework (DRF)) для социальной сети Yatube.
 
@@ -9,6 +16,15 @@ API (основанный на Django REST Framework (DRF)) для социал�
 - Сериализация данных для моделей проекта (Group, Post, Follow, Comment).
 - Обработка GET, POST, PATCH, PUT и DELETE запросов.
 
+---
+## Технологии
+* Python 3.9
+* Django 3.2
+* djangorestframework 3.12.4
+* djoser 2.1.0
+* СУБД SQLite
+
+---
 ## Как запустить проект
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -57,6 +73,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+---
 ## Запуск тестов
 
 Из корня проекта:
@@ -67,6 +84,7 @@ pytest
 
 Если все тесты прошли успешно, мои поздравления!
 
+---
 ## Эндпоинты проекта
 
 - `api/v1/api-token-auth/` (POST): передать логин и пароль, получить токен.
@@ -92,11 +110,10 @@ pytest
 - `api/v1/jwt/verify/` (POST): Проверка JWT-токена.
 
 
+---
+## Разработал:
+[Aleksey Kazikov](https://github.com/KazikovAP)
 
-## Авторы
-
-Aleksey Kazikov
-
+---
 ## Лицензия
-
 [MIT](https://opensource.org/licenses/MIT)
